@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+
+
+<!------- CSS ------->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="list roundBorder">
+        <div class="date btnTheme">
+            <div class="dateLeft">
+                <div>
+                    <div id="dateMonth"></div>
+                    <div id="dateYear"></div>
+                </div>
+            </div>
+            <div id="dateText"></div>
+        </div>
+        <form onsubmit="addNewTask(event)">
+            <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+            <button type="submit" class="addTaskButton">+</button>
+            <button type="submit" class="orderButton roundBorder" onclick="renderOrderedTask()">Ordenar</button>
+        </form>
+    </div>
+
+
+<!------- JavaScript ------->
+    <script src="js/main.js"></script>
+</body>
+</html>
